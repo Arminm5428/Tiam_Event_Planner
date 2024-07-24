@@ -1,0 +1,223 @@
+#gradient-background {
+  background: linear-gradient(330deg, #000, rgb(56, 3, 39), #000);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+  
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+@font-face {
+  font-family: "nazanin";
+  src: url("../fonts/B-NAZANIN.TTF") format("truetype");
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "nazanin", sans-serif;
+  /* background-image: url("../images/background/pexels-anniroenkae-4793467.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+
+.head-line {
+  width: 80%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+a:link {
+  text-decoration-line: none;
+}
+
+.name {
+  color: antiquewhite;
+  font-size: 28px;
+  position: relative;
+  top: 50px;
+  z-index: 1;
+}
+
+.name-img {
+  width: 300px;
+  position: relative;
+  top: -90px
+}
+.menu-contents {
+  margin-top: 10px;
+}
+
+.content .image {
+  width: 300px;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 0 10px black;
+  transition: 2s;
+}
+
+img.content:hover {
+  transform: scale(1.1);
+}
+
+.flex-container {
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content .description {
+  color: antiquewhite;
+  max-width: 500px;
+  min-width: 250px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.content {
+  margin: 30px auto;
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+
+div.second {
+  direction: ltr;
+}
+
+p.second {
+  direction: rtl;
+}
+
+div.description {
+  text-align: center;
+}
+
+.description > a {
+  color: antiquewhite;
+}
+
+hr {
+  height: 2px;
+  color: whitesmoke;
+}
+
+
+.footer-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items:last baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px auto;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  width: 80%;
+
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.links, li > a {
+  color: antiquewhite;
+  font-size: 20px;
+  list-style: none;
+}
+
+p.copy-right {
+  direction: ltr;
+  color: darkred;
+  padding: 20px;
+}
+
+
+
+a.gallery {
+  background: linear-gradient(black, rgb(51, 0, 49), black);
+  color: snow;
+  border: none;
+  border-radius: 20%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 4px 7px;
+  font-size: large;
+  font-weight: 700;
+}
+
+
+a.contact-links {
+  color: white;
+}
+
+svg.contact-links {
+  height: 24px;
+  margin-top: 16px;
+  margin-left: 8px;
+  transition: .5s;
+}
+
+svg.contact-links:hover {
+  transform: scale(1.2);
+  color: #EB0985;
+}
+
+
+
+
+/* 
+contacts styling part below
+*/
+
+div.contacts-contents {
+  min-height: 50%;
+  max-height: 80%;
+  align-items: center;
+  /* border: 3px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.text-part > p {
+  color: snow;
+  font-size: 24px;
+}
+
+p > a {
+  color: snow;
+}
+
+div.contacts-contents > iframe {
+  min-height: 200px;
+  height: 90%;
+  max-width: 90%;
+}
+
+
